@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cabal build
+stack build
 while true; do
-	cuda-memcheck cabal run || break
+	cuda-memcheck stack run || break
 done
